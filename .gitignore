@@ -1,0 +1,11 @@
+# AI drafts and local scratch
+.ai/drafts/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+
+# Install side-by-side copies to merge
+*.framework.md

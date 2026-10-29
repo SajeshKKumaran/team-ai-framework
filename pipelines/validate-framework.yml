@@ -1,0 +1,20 @@
+# Validates the framework's Copilot customization files on every PR.
+# Azure DevOps Server YAML pipeline. Register it in Pipelines and add it as a build validation policy on main.
+# TEAM-CUSTOMIZE: pool name for your self-hosted Windows agents.
+
+# In Azure Repos, PR validation comes from the branch policy, not a pr: trigger.
+trigger: none
+
+pool:
+  name: Default
+
+steps:
+  - checkout: self
+    clean: true
+
+  - task: PowerShell@2
+    displayName: Validate agents, skills and instructions
+    inputs:
+      targetType: filePath
+      filePath: scripts/Test-Framework.ps1
+      pwsh: false

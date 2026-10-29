@@ -1,0 +1,43 @@
+{
+  "collectionUrl": "<https://your-ado-server/tfs/DefaultCollection>",
+  "project": "<ProjectName>",
+  "team": "<TeamName>",
+  "apiVersion": "7.0",
+  "auth": "windows",
+  "aiTag": "ai-assisted",
+  "blockedTag": "Blocked",
+  "maxResults": 200,
+  "maxItemsPerWrite": 25,
+  "creatableTypes": [
+    "Epic",
+    "Feature",
+    "User Story",
+    "Task",
+    "Bug",
+    "Test Case"
+  ],
+  "writableFields": [
+    "System.Title",
+    "System.Description",
+    "System.Tags",
+    "System.History",
+    "System.State",
+    "System.AreaPath",
+    "System.IterationPath",
+    "Microsoft.VSTS.Common.AcceptanceCriteria",
+    "Microsoft.VSTS.Common.Priority",
+    "Microsoft.VSTS.Common.Severity",
+    "Microsoft.VSTS.Common.ValueArea",
+    "Microsoft.VSTS.Scheduling.StoryPoints",
+    "Microsoft.VSTS.Scheduling.OriginalEstimate",
+    "Microsoft.VSTS.Scheduling.RemainingWork",
+    "Microsoft.VSTS.TCM.ReproSteps",
+    "Microsoft.VSTS.TCM.SystemInfo",
+    "Microsoft.VSTS.TCM.Steps"
+  ],
+  "blockedStates": [
+    "Closed",
+    "Removed",
+    "Done"
+  ]
+}
